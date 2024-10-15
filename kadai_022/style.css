@@ -22,13 +22,13 @@ h1 {
 
 h2 {
     font-size: 25px;
-    color: rgb(239,111,139);
     margin-right: 5px;
     border-bottom: 3px dotted rgb(236,122,122);
     padding-bottom: 5px;
 }
 h2::before {
-    content:"●"
+    content:"●";
+    color: rgb(239,111,139);
 }
 
 .contents {
