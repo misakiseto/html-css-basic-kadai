@@ -18,7 +18,7 @@
             <td>{{ product.name }}</td>
             <td>{{ product.price }} 円</td>
             <td><img src="{{ product.img.url }}" style="width:10px height:auto;"></td>
-            <td>{{ product.description }}</td>
+            <td>{{ product.description | linebreaks | safe }}</td>
         </tr>
     </tbody>
 </table>
