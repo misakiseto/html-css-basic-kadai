@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% block title %}詳細{% endblock %}
+{% block content %}
+<h1>詳細</h1>
+<p>商品名: {{ product.name }}</p>
+<p>価格: {{ product.price }}</p>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|bootstrap }}
+    <br>
+    <a href="{% url 'list' %}">戻る</a>
+    <input type="submit" class="btn btn-success" value="詳細">
+</form>
+{% endblock %}
